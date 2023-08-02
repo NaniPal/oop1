@@ -1,0 +1,242 @@
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+body {
+ font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-bottom: 3px solid transparent;
+    margin-right: 40px;
+}
+
+.tabs li a:hover {
+  border-bottom: 3px solid #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content:target {
+  display: block;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#books {
+    margin-top: 30px;
+}
+
+#books h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.book-item {
+    text-align: center;
+    flex-basis: calc(33.333% - 20px);
+}
+
+.book-item img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-item button, .checkout-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.book-item button:hover {
+    background-color: #0056b3;
+}
+
+
+#orders {
+    margin-top: 30px;
+}
+
+#orders h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.order-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.order-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+
+#account {
+    margin-top: 30px;
+}
+
+#account h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#account form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#account label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#account input[type="text"],
+#account input[type="email"],
+#account input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#account input[type="text"]:enabled,
+#account input[type="email"]:enabled,
+#account input[type="password"]:enabled {
+    border-color: #007bff;
+}
+
+#account button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#account button:hover {
+    background-color: #555;
+}
+
+
+.book-details {
+  display: flex;
+}
+
+.imga {
+  flex: 1;
+  padding: 20px;
+}
+
+.imga img {
+  max-width: 100%;
+  height: auto;
+}
+
+.desc {
+  flex: 2;
+  padding: 20px;
+}
+
+.desc h1 {
+  margin-top: 0; 
+}
+
+.desc p1 {
+  margin: 0;
+}
+
+#cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.cart-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-item {
+  margin: 10px;
+}
+
+.cart-item img {
+  max-width: 100px;
+  height: auto;
+}
+
+
+#cart h2 {
+  margin-bottom: 10px;
+}
+
+#cart-list::after {
+  content: ""; 
+  flex: auto;
+}
